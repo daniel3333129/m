@@ -3,4 +3,11 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
     basic.pause(500)
     basic.clearScreen()
 })
-basic.showIcon(IconNames.Happy)
+basic.showString("Hello! I am dice")
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    . . . . .
+    # . . . #
+    . # # # .
+    `)

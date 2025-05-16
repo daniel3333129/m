@@ -4,4 +4,11 @@ def on_gesture_shake():
     basic.clear_screen()
 input.on_gesture(Gesture.SHAKE, on_gesture_shake)
 
-basic.show_icon(IconNames.HAPPY)
+basic.show_string("Hello! I am dice")
+basic.show_leds("""
+    . . . . .
+    . # . # .
+    . . . . .
+    # . . . #
+    . # # # .
+    """)
